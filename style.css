@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.left_side {
+  width: 40%;
+  height: 100%;
+}
+
+.right_side {
+  background-color: #3c3d42;
+  height: fit-content;
+  width: 60%;
+  min-height: 100vh;
+}
+
+/*   My name & My Picture */
+
+.my_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+
+.my_avatar img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 9px rgba(82, 82, 82, 0.471);
+}
+
+.full_name {
+  font-family: "Varela Round", sans-serif;
+  color: #4a4e51;
+  font-size: 1.1em;
+}
+
+.full_name h1 {
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.full_name h1::before {
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  left: -5px;
+  height: 15px;
+  width: 100%;
+  z-index: -1;
+  background-color: #61bd906a;
+  border-radius: 1px;
+}
+
+/* About Me  /  Addresses */
+
+.Addresses {
+  padding: 25px;
+}
+
+.description {
+  color: #3c3d42;
+  margin-top: 20px;
+  margin-left: 33px;
+  line-height: 27px;
+}
+
+/* Addresses */
+
+.title_section {
+  color: #61bd90;
+  font-size: 17px;
+}
+
+/* contact */
+
+.contact {
+  padding: 25px;
+}
+
+.line_info {
+  margin-left: 33px;
+  margin-top: 20px;
+  color: #61bd90;
+  font-size: 15px;
+}
+
+.ii2 {
+  margin-left: 25px;
+  color: #3c3d42;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.line_info:hover .ii2 {
+  color: #fff;
+  background-color: #61bd90;
+}
+
+.sub_text {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+.sub_line {
+  display: block;
+  font-size: 1.2rem;
+  margin-left: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+.sub_line span {
+  margin-left: 10px;
+  color: #ffffff;
+  font-size: medium;
+}
+
+.iconify {
+  color: #a92b25;
+}
+
+.fa-brands {
+  color: rgb(255, 255, 255);
+}
+
+.fa-brands fa-free {
+  color: #1b1b32;
+}
+.sub_line:hover {
+  background-color: #61bd90;
+}
+
+#free {
+  color: #ffffff;
+}
